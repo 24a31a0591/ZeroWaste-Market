@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ZeroWaste Market - Your destination for sustainable, eco-friendly products. Shop plastic-free alternatives for a greener lifestyle.">
+  <meta name="keywords" content="zero waste, eco-friendly, sustainable, plastic-free, green living">
+  <meta name="theme-color" content="#2d5a27">
+  
+  <title>ZeroWaste Market | Sustainable Living Made Simple</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/globals.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='[w3.org](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">🌿</div>
+      <div class="loader-text">ZeroWaste Market</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">ZeroWaste</span>
+      </a>
+      
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#products" class="nav-link">Shop</a></li>
+          <li><a href="#features" class="nav-link">Why Us</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <button class="search-toggle" id="searchToggle" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        
+        <button class="cart-toggle" id="cartToggle" aria-label="Shopping cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+      <div class="search-bar-container">
+        <input type="text" class="search-input" id="searchInput" placeholder="Search for eco-friendly products...">
+        <button class="search-close" id="searchClose" aria-label="Close search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="hero-shape hero-shape-1"></div>
+        <div class="hero-shape hero-shape-2"></div>
+        <div class="hero-shape hero-shape-3"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-badge">🌱 Sustainable Living</span>
+          <h1 class="hero-title">
+            Live Green,<br>
+            <span class="text-accent">Shop Clean</span>
+          </h1>
+          <p class="hero-description">
+            Discover our curated collection of eco-friendly products that help you reduce waste 
+            and make a positive impact on our planet. Every purchase plants a tree.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">
+              Shop Now
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-secondary">Learn More</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number" data-count="50000">0</span>
+              <span class="stat-label">Happy Customers</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="120">0</span>
+              <span class="stat-label">Eco Products</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="25000">0</span>
+              <span class="stat-label">Trees Planted</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-wrapper">
+           <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600">
+           <div class="hero-float-card hero-float-card-1">
+              <span class="float-icon">🌍</span>
+              <span class="float-text">Carbon Neutral</span>
+            </div>
+            <div class="hero-float-card hero-float-card-2">
+              <span class="float-icon">♻️</span>
+              <span class="float-text">100% Recyclable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <a href="#about" class="scroll-indicator">
+          <span>Scroll</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="7 13 12 18 17 13"/>
+            <polyline points="7 6 12 11 17 6"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-images">
+            <div class="about-image about-image-1">
+              <img src="img/sustainable.png" alt="Sustainable packaging">
+            </div>
+            <div class="about-image about-image-2">
+              <img src="img/ecofriendly.png" alt="Eco-friendly products">
+            </div>
+            <div class="about-badge">
+              <span class="badge-number">10+</span>
+              <span class="badge-text">Years of Impact</span>
+            </div>
+          </div>
+          <div class="about-content">
+            <span class="section-tag">About Us</span>
+            <h2 class="section-title">Making Sustainability <span class="text-accent">Accessible</span></h2>
+            <p class="about-text">
+              Founded in 2015, ZeroWaste Market began with a simple mission: make eco-friendly living 
+              easy and affordable for everyone. We believe small changes create big impact, and every 
+              sustainable choice matters.
+            </p>
+            <p class="about-text">
+              We carefully curate products that meet our strict sustainability standards—plastic-free, 
+              ethically sourced, and built to last. Our team is dedicated to helping you transition 
+              to a zero-waste lifestyle without compromising on quality or convenience.
+            </p>
+            <div class="about-features">
+              <div class="about-feature">
+                <div class="feature-icon">🌱</div>
+                <div class="feature-content">
+                  <h4>Eco-Certified</h4>
+                  <p>All products meet strict environmental standards</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="feature-icon">🤝</div>
+                <div class="feature-content">
+                  <h4>Fair Trade</h4>
+                  <p>Supporting ethical suppliers worldwide</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="feature-icon">📦</div>
+                <div class="feature-content">
+                  <h4>Plastic-Free Shipping</h4>
+                  <p>100% recyclable or compostable packaging</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why Choose Us</span>
+          <h2 class="section-title">The ZeroWaste <span class="text-accent">Difference</span></h2>
+          <p class="section-description">
+            We're more than just a store—we're a community committed to sustainable living.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Quality Guaranteed</h3>
+            <p class="feature-card-text">
+              Every product is tested and vetted by our team. If you're not satisfied, we offer 
+              hassle-free returns within 30 days.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"/>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Carbon-Neutral Shipping</h3>
+            <p class="feature-card-text">
+              We offset 100% of shipping emissions and use only recyclable or compostable 
+              packaging materials.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                <line x1="15" y1="9" x2="15.01" y2="9"/>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Expert Support</h3>
+            <p class="feature-card-text">
+              Our eco-living experts are here to help you find the perfect products and answer 
+              any sustainability questions.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">1% for the Planet</h3>
+            <p class="feature-card-text">
+              We donate 1% of every sale to environmental nonprofits working to protect 
+              our planet's future.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Products</span>
+          <h2 class="section-title">Shop <span class="text-accent">Sustainable</span></h2>
+          <p class="section-description">
+            Browse our collection of thoughtfully curated eco-friendly essentials.
+          </p>
+        </div>
+        
+        <!-- Filters -->
+        <div class="products-filters">
+          <div class="filter-categories" id="filterCategories">
+            <!-- Categories loaded dynamically -->
+          </div>
+          <div class="filter-controls">
+            <div class="filter-sort">
+              <label for="sortSelect">Sort by:</label>
+              <select id="sortSelect" class="sort-select">
+                <option value="">Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Highest Rated</option>
+                <option value="name">Name A-Z</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Products loaded dynamically -->
+        </div>
+        
+        <!-- Loading State -->
+        <div class="products-loading" id="productsLoading">
+          <div class="loading-spinner"></div>
+          <p>Loading products...</p>
+        </div>
+        
+        <!-- Empty State -->
+        <div class="products-empty" id="productsEmpty" style="display: none;">
+          <div class="empty-icon">🔍</div>
+          <h3>No products found</h3>
+          <p>Try adjusting your filters or search terms.</p>
+          <button class="btn btn-primary" id="clearFilters">Clear Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Testimonials</span>
+          <h2 class="section-title">What Our <span class="text-accent">Customers</span> Say</h2>
+        </div>
+        <div class="testimonials-slider" id="testimonialsSlider">
+          <div class="testimonial-track" id="testimonialTrack">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">★★★★★</div>
+              <p class="testimonial-text">
+                "ZeroWaste Market has completely transformed how I shop. The quality of their products 
+                is amazing, and I love knowing my purchases are making a difference."
+              </p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/....">
+                <img src="https://i.pravatar.cc/100?img=1">
+                <div class="author-info">
+                  <span class="author-name">Sarah M.</span>
+                  <span class="author-title">Eco Enthusiast</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-rating">★★★★★</div>
+              <p class="testimonial-text">
+                "The bamboo toothbrushes and shampoo bars are game-changers! Great products, fast 
+                shipping, and the packaging was completely plastic-free. Highly recommend!"
+              </p>
+              <div class="testimonial-author">
+                <img src="[i.pravatar.cc](https://i.pravatar.cc/100?img=2)" alt="James K." class="author-avatar">
+                <div class="author-info">
+                  <span class="author-name">James K.</span>
+                  <span class="author-title">Verified Buyer</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-rating">★★★★★</div>
+              <p class="testimonial-text">
+                "Finally, an eco-friendly store that doesn't compromise on quality! The beeswax wraps 
+                have replaced all my plastic wrap. Love the mission behind this company."
+              </p>
+              <div class="testimonial-author">
+                <img src="[i.pravatar.cc](https://i.pravatar.cc/100?img=3)" alt="Emily R." class="author-avatar">
+                <div class="author-info">
+                  <span class="author-name">Emily R.</span>
+                  <span class="author-title">Sustainability Blogger</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-nav">
+            <button class="testimonial-nav-btn prev" id="testimonialPrev" aria-label="Previous testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+            <div class="testimonial-dots" id="testimonialDots"></div>
+            <button class="testimonial-nav-btn next" id="testimonialNext" aria-label="Next testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <span class="section-tag">Stay Updated</span>
+            <h2 class="section-title">Join Our <span class="text-accent">Green</span> Community</h2>
+            <p>Get exclusive deals, eco-tips, and be the first to know about new arrivals. 
+            Plus, receive 15% off your first order!</p>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="form-group">
+              <input type="email" class="form-input" id="newsletterEmail" placeholder="Enter your email" required>
+              <button type="submit" class="btn btn-primary">
+                Subscribe
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </button>
+            </div>
+            <p class="form-note">🔒 We respect your privacy. Unsubscribe anytime.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-tag">Get in Touch</span>
+            <h2 class="section-title">We'd Love to <span class="text-accent">Hear</span> From You</h2>
+            <p class="contact-description">
+              Have questions about our products or sustainability practices? 
+              Our team is here to help!
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>Visit Us</h4>
+                  <p>123 Green Street, Eco City, EC 12345</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>Email Us</h4>
+                  <p>hello@zerowastemarket.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>Call Us</h4>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Pinterest">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Name</label>
+                  <input type="text" class="form-input" id="contactName" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email</label>
+                  <input type="email" class="form-input" id="contactEmail" placeholder="Your email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactSubject">Subject</label>
+                <input type="text" class="form-input" id="contactSubject" placeholder="How can we help?">
+              </div>
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea class="form-input form-textarea" id="contactMessage" rows="5" placeholder="Your message..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                Send Message
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shopping Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Cart items loaded dynamically -->
+    </div>
+    <div class="cart-empty" id="cartEmpty">
+      <div class="empty-icon">🛒</div>
+      <h4>Your cart is empty</h4>
+      <p>Add some eco-friendly products to get started!</p>
+      <a href="#products" class="btn btn-primary" id="cartShopNow">Shop Now</a>
+    </div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-subtotal">
+        <span>Subtotal:</span>
+        <span class="subtotal-amount" id="cartSubtotal">$0.00</span>
+      </div>
+      <p class="cart-note">Shipping & taxes calculated at checkout</p>
+      <button class="btn btn-primary btn-full" id="checkoutBtn">
+        Proceed to Checkout
+      </button>
+    </div>
+  </aside>
+
+  <!-- Toast Notifications -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <span class="logo-icon">🌿</span>
+            <span class="logo-text">ZeroWaste</span>
+          </a>
+          <p class="footer-description">
+            Making sustainable living accessible, one product at a time. 
+            Join us in creating a greener future.
+          </p>
+          <div class="footer-certifications">
+            <span class="certification">🌱 Certified B Corp</span>
+            <span class="certification">♻️ 1% for the Planet</span>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#products">All Products</a></li>
+            <li><a href="#">Kitchen</a></li>
+            <li><a href="#">Bathroom</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gift Sets</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ZeroWaste Market. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+
